@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+header {
+    background-image: url(assets/images/background-image.jpg);
+    background-position: center;
+    min-height: 700px;
+}
+
+header .opa {
+    position: absolute;
+    top: 0;
+    min-height: 700px;
+    width: 100%;
+    opacity: 0.44;
+    background-color: black;
+    z-index: 2;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    gap: 380px;
+
+}
+
+nav img {
+    height: 40px;
+}
+
+nav .btn {
+    display: flex;
+    gap: 20px;
+}
+
+nav .btn select {
+    width: 120px;
+    height: 32px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    /* font-weight: 200px; */
+}
+
+nav .btn input {
+    height: 32px;
+    width: 67px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+}
+
+.main {
+    height: 610px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.main .text {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main h1 {
+    font-size: 60px;
+}
+
+.main h3 {
+    font-size: 26px;
+}
+
+.main p {
+    font-size: 24px;
+}
+
+.main .emailbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+}
+
+.main #email {
+    width: 350px;
+    height: 50px;
+    padding-left: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgb(48, 48, 48);
+    color: white;
+}
+
+.main #gsbtn {
+    height: 50px;
+    width: 200px;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+    font-size: 25px;
+    color: white;
+}
+
+main .container {
+    /* border: 1px solid black; */
+    min-height: 550px;
+    background-color: black;
+    /* margin-top: 8px; */
+    border-top: 10px solid rgb(41, 41, 41);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+main .container .txt {
+    color: white;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+main .container h2 {
+    font-size: 50px;
+}
+
+main .container p {
+    font-size: 25px;
+}
+
+main .container img {
+    width: 550px;
+}
+
+main .ques {
+    min-height: 1000px;
+    background-color: black;
+    border-top: 10px solid rgb(41, 41, 41);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+main .ques .q {
+    background-color: rgb(41, 41, 41);
+    height: 90px;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .ques .q>p {
+    color: white;
+    font-size: 25px;
+    padding-left: 25px;
+}
+
+main .ques .q>img {
+    padding-right: 25px;
+}
+
+main .ques>p {
+    color: white;
+    font-size: 21px;
+    padding-top: 45px;
+}
+
+main .ques h2 {
+    color: white;
+    font-size: 55px;
+    padding-bottom: 15px;
+}
+
+main .emailbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    padding-top: 10px;
+}
+
+main #email {
+    width: 350px;
+    height: 50px;
+    padding-left: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgb(48, 48, 48);
+    color: white;
+}
+
+main #gsbtn {
+    height: 50px;
+    width: 200px;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+    font-size: 25px;
+    color: white;
+}
+
+footer {
+    height: 400px;
+    background-color: black;
+    border-top: 10px solid rgb(41, 41, 41);
+    color: rgb(176, 176, 176);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding-left: 170px;
+    gap: 25px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 15px;
+    text-decoration: underline;
+}
+
+.grid span {
+    cursor: pointer;
+}
+
+footer select {
+    width: 120px;
+    height: 32px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    /* font-weight: 200px; */
+}
+
+@media only screen and (max-width: 1200px) {
+    main .container {
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    main .ques {
+        width: 80vw;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    main .ques .q {
+        min-width: 1150px;
+    }
+}
